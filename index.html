@@ -3,46 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoldHEN Guide for PS4</title>
+    <title>PS4HAX</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: white;
+            background-color: #1a1a1a;
+            color: #e6e6e6;
             margin: 0;
             padding: 0;
-            text-align: center;
+            line-height: 1.6;
         }
         header {
-            background-color: #1e1e1e;
-            padding: 15px;
-            font-size: 24px;
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
         }
         .container {
-            width: 80%;
-            margin: auto;
             padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            color: #ffcc00;
         }
         a {
             color: #00aaff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #333;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin: 20px 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 <body>
-    <header>GoldHEN Guide for PS4</header>
-    
+    <header>
+        <h1>GoldHEN PS4 Modding Guide</h1>
+    </header>
     <div class="container">
-        <h2>What is GoldHEN?</h2>
-        <p>GoldHEN is a homebrew enabler for jailbroken PS4 consoles, allowing users to run custom software.</p>
-
-        <h2>How to Install</h2>
-        <p>1. Ensure your PS4 is on a compatible firmware version (e.g., 9.00).</p>
-        <p>2. Host the exploit files locally or use an online payload loader.</p>
-        <p>3. Activate the exploit via the PS4 browser or USB method.</p>
-
-        <h2>FAQs</h2>
-        <p><strong>Is GoldHEN legal?</strong> GoldHEN itself is homebrew, but how you use it matters.</p>
-        <p><strong>Does this work on the latest firmware?</strong> No, newer firmware updates usually block exploits.</p>
-    </div>
-</body>
-</html>
+        <section>
+            <h2>Introduction</h2>
+            <p>GoldHEN is a Homebrew Enabler for the PlayStation 4, allowing users to run unsigned code and customize their console experience. Developed by the community, it offers a range of features to enhance your PS4's capabilities.</p>
+        </section>
+        <section>
+            <h2>Prerequisites</h2>
+            <ul>
+                <li>A PlayStation 4 console running firmware version 9.00 or lower. <a href="https://wololo.net/ps4-jailbreak-ps4-cfw4dummies/" target="_blank">Check firmware compatibility</a>.</li>
+                <li>A USB drive formatted to exFAT or FAT32.</li>
+                <li>GoldHEN payload files. <a href="https://github.com/GoldHEN/GoldHEN" target="_blank">Download from the official GitHub repository</a>.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Installation Guide</h2>
+            <ol>
+                <li><strong>Prepare the USB Drive:</strong>
+                    <ul>
+                        <li>Format your USB drive to exFAT or FAT32.</li>
+                        <li>Create a folder named <code>PS4</code> at the root of the drive.</li>
+                        <li>Within the <code>PS4</code> folder, create another folder named <code>EXPLOIT</code>.</li>
+                        <li>Place the GoldHEN payload file into the <code>EXPLOIT</code> folder.</li>
+                    </ul>
+                </li>
+                <li><strong>Launch the PS4 Exploit:</strong>
+                    <ul>
+                        <li>Connect the USB drive to your PS4.</li>
+                        <li>Navigate to the browser and visit a trusted exploit hosting site compatible with your firmware version.</li>
+                        <li>Select the appropriate exploit to inject the GoldHEN payload.</li>
+                    </ul>
+                </li>
+                <li><strong>Activate GoldHEN:</strong>
+                    <ul>
+                        <li>Once the exploit is executed, GoldHEN should load automatically.</li>
+                        <li>Confirm its activation by checking for the GoldHEN icon or notifications.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>Features</h2>
+            <ul>
+                <li>Homebrew Enabler</li>
+                <li>Debug Settings</li>
+                <li>VR Support</li>
+                <li>Remote Package Install</li>
+                <li>Rest Mode Support</li>
+                <li>External HDD Support</li>
+                <li>Official External HDD Format Support</li>
+                <li>Debug Trophies Support</li>
+                <li>sys_dynlib_dlsym Patch</li>
+                <li>UART Enabler</li>
+                <li>Never Disable Screenshot</li>
+                <li>Remote Play Enabler</li>
+                <li>FW Update Block</li>
+                <li>FTP Server on port 2121</li>
+                <li>BinLoader Server on port 9090</li>
+                <li>Klog Server on port 3232</li>
+                <li>CE-30391-6 Error CMOS Fix</li>
+                <li>Integrated Cheat Menu</li>
+                <li>Integrated FPS Counter</li>
+                <li>Plugins Support</li>
+                <li>TitleId Label Feature</li>
+                <li>Scanlines Overlay</li>
+                <li>Internal PKG Installation Support (<code>/data/pkg</code>)</li>
+            </ul>
+            <p>For a detailed list and updates, visit the <a href="https://github.com/GoldHEN/GoldHEN" target="_blank">official GoldHEN GitHub page</a>.</p>
+        </section>
+        <section>
+            <h2>FAQs</h2>
+            <p><strong>Is jailbreaking my PS4 legal?</strong> Jailbreaking may void your warranty and violate Sony's terms of service. Ensure you're aware of the legal implications in your region.</p>
+            <p><strong>Can I revert my PS4 to its original state?</strong> While some users have reported success in restoring their PS4 to factory settings, there's no guaranteed method to reverse a jailbreak.</p>
+            <p><strong>Will I still receive official updates?</strong> After jailbreaking, it's advisable to avoid official updates, as they may patch the exploit and remove jailbreak functionalities.</p>
+        </section>
+        <section>
+            <h2>Video Tutorial</h2>
+            <div class 
